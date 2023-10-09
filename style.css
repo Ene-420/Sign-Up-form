@@ -1,0 +1,239 @@
+@font-face {
+    font-family: odin-font;
+    src: url(media/Norse-Bold.otf);
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    height: fit-content;
+
+}
+
+.col-1{
+    width: 60%;
+    background-image: url(media/halie-west-25xggax4bSA-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    flex: 1;
+
+}
+
+.col-1-content{
+    background-color: black;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top:100px;
+    padding: 30px;
+}
+
+.text-logo{
+    font-size: 7rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: odin-font,sans-serif;
+}
+
+.odin-logo{
+    width: 200px;
+    height: 200px;
+}
+
+.col-2{
+    display: flex;
+    flex-direction: column;
+}
+
+.col-2-content{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    
+    background-color: #efefef;
+    padding: 50px 0 50px 0;
+}
+
+.col-2-content p{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.col-2-form{
+    display: flex;
+    width: 80%;
+    margin: 50px auto;
+    flex: 1;
+    align-items: center;
+    
+}
+.sign-up-form{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sign-up-form h2{
+    margin: 5px;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.row-content{
+    display: flex;
+    gap: 50px;
+
+}
+
+.form-row{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.form-row label, .col-2-footer button ,.col-2-footer p{
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form-row input{
+    border:1px solid  #E5E7EB;
+    border-radius: 3px;
+}
+.form-row input:focus{
+    border: 2px solid #1c54c5;
+    box-shadow: 3px 5px 10px #888888;
+    outline: none;
+}
+
+.form-row input:invalid, .password-invalid{
+    border: 1px solid red !important;
+    box-shadow: none;
+}
+
+.pwd-verification{
+    font-size: 0.8rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    visibility: hidden;
+}
+.col-2-footer{
+    background-color: #efefef;
+    padding: 10px 0;
+    /* flex: 1; */
+}
+
+.col-2-footer .col-2-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.col-2-footer button{
+    padding: 8px 35px;
+    background-color: #596D48;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.col-2-footer p a{
+    color: #596D48;
+    text-decoration: none;
+}
+/* .col-1 img{
+    width: 80%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+
+} */
+
+.valid-password{
+    border: 1px solid green !important;
+    outline: none;
+}
+.invalid{
+    color: red;
+}
+
+.valid{
+    color: green;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        width: fit-content;
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .col-1{
+        width: 100%;
+        height: fit-content;
+    }
+
+    .col-2{
+        width: 100%;
+    }
+    .col-2-content p{
+        width: 80%;
+        font-size: 0.8rem;
+    }
+
+    .col-2-form, .col-2-footer .col-2-form{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .odin-logo{
+        width: 100px;
+        height: 100px;
+    }
+    .text-logo{
+        font-size: 3rem;
+    }
+    .col-2-content{
+        padding: 20px 0;
+    }
+    
+    .row-content{
+        flex-direction: column;
+    }
+
+    .col-1-content{
+        margin: 40px 0;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .col-1{
+        height: 100vh;
+    }
+    .form-row label{
+        font-size: 1.25rem;
+    }
+    .col-2-form{
+        
+    }
+
+    .form-row input{
+        width: 220px;
+        height: 30px;
+    }
+
+    .sign-up-form{
+        
+    }
+/* 
+    .row-content{
+        flex-direction: column;
+    } */
+}
+    
